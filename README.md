@@ -1,6 +1,6 @@
 ## Hi there 👋    ![](https://komarev.com/ghpvc/?username=ascendho)
-#### I'm a student from China, majoring in Computer Science.
-But I feel sorry for my learning progress in recent years, cause I wasted a lot of time due to psychological reason, but nerver too late! I am working to build my learn habits and overcome any difficulty I will face during my education journey. Hope to get back on track soon.
+#### I'm a student who majors in Computer Science.
+I am working to build my learn habits and overcome any difficulty I will face during my education journey. Hope to get back on track soon.
 
 
 - 🔭 I’m currently working on <a href="https://github.com/ascendho/Meta-Front-End-Developer-Professional-Certificate">Meta-Front-End-Developer-Professional-Certificate</a> and <a href="https://github.com/ascendho/Linear-Algebra-and-Its-Applications">Linear-Algebra-and-Its-Applications</a>
