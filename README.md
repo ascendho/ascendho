@@ -19,12 +19,13 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-# Blog posts
+#### 📕  Latest Blog Post 
 <!-- BLOG-POST-LIST:START -->
 - [音乐播放器--点击进度栏播放功能](https://zhuanlan.zhihu.com/p/606029115)
 - [textContent vs innerText](https://zhuanlan.zhihu.com/p/605622859)
 <!-- BLOG-POST-LIST:END -->
 
+#### Github Stats
 
 | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=ascendho&show_icons=true&count_private=true&theme=buefy&hide_border=true" alt="ascend ho's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ascendho&layout=compact&theme=buefy&hide_border=true" /></a> |
 | ------------- | ------------- |
