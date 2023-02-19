@@ -21,6 +21,8 @@ Here are some ideas to get you started:
 -->
 # Blog posts
 <!-- BLOG-POST-LIST:START -->
+- [音乐播放器--点击进度栏播放功能](https://zhuanlan.zhihu.com/p/606029115)
+- [textContent vs innerText](https://zhuanlan.zhihu.com/p/605622859)
 <!-- BLOG-POST-LIST:END -->
 
 
