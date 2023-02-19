@@ -25,7 +25,7 @@ Here are some ideas to get you started:
 - [textContent vs innerText](https://zhuanlan.zhihu.com/p/605622859)
 <!-- BLOG-POST-LIST:END -->
 
-#### Github Stats
+## Github Stats
 
 | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=ascendho&show_icons=true&count_private=true&theme=buefy&hide_border=true" alt="ascend ho's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ascendho&layout=compact&theme=buefy&hide_border=true" /></a> |
 | ------------- | ------------- |
