@@ -16,4 +16,4 @@ jobs:
       - name: Pull in dev.to posts
         uses: gautamkrishnar/blog-post-workflow@v1
         with:
-          feed_list: "https://rss.lilydjwg.me/zhihuzhuanlan/c_1608071172641214464 "
+          feed_list: "https://rss.lilydjwg.me/zhihuzhuanlan/c_1608071172641214464"
