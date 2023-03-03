@@ -21,7 +21,7 @@ Here are some ideas to get you started:
 -->
 #### 📕  Latest Blog Post 
 <!-- BLOG-POST-LIST:START -->
-- [异步JavaScript&lpar;一&rpar;](https://zhuanlan.zhihu.com/p/610858268)
+- [异步JavaScript-事件循环&lpar;Event Loop&rpar;](https://zhuanlan.zhihu.com/p/610858268)
 - [小全栈app&lpar;基于react和supabase&rpar;](https://zhuanlan.zhihu.com/p/610531418)
 - [初识Window.localStorage](https://zhuanlan.zhihu.com/p/610468304)
 - [音乐播放器--点击进度栏播放功能](https://zhuanlan.zhihu.com/p/606029115)
