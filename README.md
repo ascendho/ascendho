@@ -1,5 +1,5 @@
 ## Hi there 👋    ![](https://komarev.com/ghpvc/?username=ascendho)
-#### I'm a student majoring in Computer Science.
+### I'm a student majoring in Computer Science.
 <!--
 - 🤔 I'm working to build my learn habits and overcome any difficulty I will face during my education journey. Hope to get back on track soon.
 
@@ -20,7 +20,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-#### 📕  Latest Blog Post 
+## 📕  Latest Blog Post 
 <!-- BLOG-POST-LIST:START -->
 - [异步JS-Promise](https://zhuanlan.zhihu.com/p/610969474)
 - [异步JavaScript-事件循环&lpar;Event Loop&rpar;](https://zhuanlan.zhihu.com/p/610858268)
@@ -29,7 +29,7 @@ Here are some ideas to get you started:
 - [音乐播放器--点击进度栏播放功能](https://zhuanlan.zhihu.com/p/606029115)
 <!-- BLOG-POST-LIST:END -->
 
-## Github Stats
+## 📊  Github Stats
 
 | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api?username=ascendho&show_icons=true&count_private=true&theme=buefy&hide_border=true" alt="ascend ho's github stats" /></a> | <a href="https://github.com/anuraghazra/github-readme-stats"><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ascendho&layout=compact&theme=buefy&hide_border=true" /></a> |
 | ------------- | ------------- |
