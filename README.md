@@ -12,11 +12,7 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
-
-
-
 ## 日常趣味
 
 - 爱好 **购买/打印** 优质纸质书进行学习并整理资料，如 <a href="https://github.com/ascendho/code-2nd">编码</a>
 - 自学爱好者，尤其是国外名校开源的优质课程，如 <a href="https://github.com/ascendho/CS50x">CS50x</a>
-
