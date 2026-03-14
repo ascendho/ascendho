@@ -11,6 +11,7 @@ Here are some ideas to get you started:
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ascendho&layout=compact&langs_count=8)
 -->
 
 "What I cannot create, I do not understand." —— Richard Feynman
@@ -22,8 +23,6 @@ Here are some ideas to get you started:
 <div align="center">
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=ascendho&show_icons=true&theme=default&include_all_commits=true&count_private=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ascendho&layout=compact&langs_count=8)
 
 ![GitHub Streak](https://streak-stats.demolab.com?user=ascendho&theme=default)
 
