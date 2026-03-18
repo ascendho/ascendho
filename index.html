@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Certificates Index</title>
+  <style>
+    :root {
+      --bg: #f7fbff;
+      --card: #ffffff;
+      --line: #d7e3f3;
+      --text: #24324a;
+      --muted: #5f6f89;
+      --accent: #2f6fd8;
+      --accent-soft: #ecf3ff;
+      --warn-bg: #fff4cc;
+      --warn-text: #7a5400;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--text);
+      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 6% 8%, #e8f1ff 0%, transparent 30%),
+        radial-gradient(circle at 94% 88%, #eaf8ff 0%, transparent 34%),
+        var(--bg);
+    }
+    .wrap {
+      max-width: 1024px;
+      margin: 32px auto;
+      padding: 0 18px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 10px 26px rgba(32, 52, 83, 0.08);
+    }
+    .head {
+      padding: 18px 24px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, #eaf2ff, #f8fbff);
+    }
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      color: var(--accent);
+      letter-spacing: 0.3px;
+    }
+    .desc {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.65;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 14px;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #fbfdff;
+      color: #39517c;
+      font-weight: 700;
+    }
+    tr:hover td {
+      background: var(--accent-soft);
+    }
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+      word-break: break-all;
+    }
+    a:hover { text-decoration: underline; }
+    .to-fill {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 999px;
+      background: var(--warn-bg);
+      color: var(--warn-text);
+      font-weight: 700;
+      border: 1px solid #f2d271;
+      font-size: 12px;
+      letter-spacing: 0.2px;
+    }
+    .foot {
+      padding: 14px 24px 20px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.65;
+    }
+    @media (max-width: 760px) {
+      .wrap { margin: 18px auto; }
+      h1 { font-size: 24px; }
+      table { font-size: 13px; }
+      th, td { padding: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="card">
+      <header class="head">
+        <h1>课程证书索引</h1>
+        <p class="desc">本页适配 GitHub Pages。可点击“Local PDF”查看证书文件，点击“Online Verify”跳转到平台核验页面。</p>
+      </header>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Platform</th>
+            <th>Course</th>
+            <th>Local PDF</th>
+            <th>Online Verify</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Coursera</td>
+            <td>AI Python for Beginners</td>
+            <td><a href="certificates/ai-python-for-beginners.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://coursera.org/verify/Z5Y6FYAN8USM" target="_blank" rel="noopener noreferrer">Z5Y6FYAN8USM</a></td>
+          </tr>
+          <tr>
+            <td>Coursera</td>
+            <td>nand2tetris I</td>
+            <td><a href="certificates/nand2tetris-i.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://coursera.org/verify/1K1GABQV8WKB" target="_blank" rel="noopener noreferrer">1K1GABQV8WKB</a></td>
+          </tr>
+          <tr>
+            <td>Coursera</td>
+            <td>nand2tetris II</td>
+            <td><a href="certificates/nand2tetris-ii.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://coursera.org/verify/WUAL2O52509M" target="_blank" rel="noopener noreferrer">WUAL2O52509M</a></td>
+          </tr>
+          <tr>
+            <td>Coursera</td>
+            <td>Reinforcement Learning</td>
+            <td><a href="certificates/reinforcement-learning.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://coursera.org/verify/2C87GU27VV3F" target="_blank" rel="noopener noreferrer">2C87GU27VV3F</a></td>
+          </tr>
+          <tr>
+            <td>Coursera</td>
+            <td>Virtualization</td>
+            <td><a href="certificates/virtualization.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://coursera.org/verify/5HWVHCGXB9EQ" target="_blank" rel="noopener noreferrer">5HWVHCGXB9EQ</a></td>
+          </tr>
+          <tr>
+            <td>Harvard</td>
+            <td>CS50 SQL</td>
+            <td><a href="certificates/cs50-sql.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://cs50.harvard.edu/certificates/33dbdcff-9bce-4dd6-a8ff-51d0dd1c19ce" target="_blank" rel="noopener noreferrer">33dbdcff-9bce-4dd6-a8ff-51d0dd1c19ce</a></td>
+          </tr>
+          <tr>
+            <td>Harvard</td>
+            <td>CS50x</td>
+            <td><a href="certificates/cs50x.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://cs50.harvard.edu/certificates/db573909-1ee6-41be-87f8-9c0b8a9d4c8a" target="_blank" rel="noopener noreferrer">db573909-1ee6-41be-87f8-9c0b8a9d4c8a</a></td>
+          </tr>
+          <tr>
+            <td>Udemy</td>
+            <td>The Grey Wolf Optimizer</td>
+            <td><a href="certificates/the-grey-wolf-optimizer.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
+            <td><a href="https://ude.my/UC-c0d986ca-97d3-45ec-b8ac-60a915774900" target="_blank" rel="noopener noreferrer">UC-c0d986ca-97d3-45ec-b8ac-60a915774900</a></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="foot">
+        Updated: 2026-03-18.<br>
+        Placeholder public URL suggestion: https://ascendho.github.io/course-certificates/
+      </div>
+    </section>
+  </div>
+</body>
+</html>
