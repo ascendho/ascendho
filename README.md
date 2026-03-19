@@ -27,10 +27,9 @@ Here are some ideas to get you started:
 ![GitHub Streak](https://streak-stats.demolab.com?user=ascendho&theme=default)
 
 </div>
+<!-- --- -->
 
----
-
-## Resume Auto Sync (Private -> Public)
+<!-- ## Resume Auto Sync (Private -> Public)
 
 This repository includes a workflow at `.github/workflows/sync-resume.yml` that syncs:
 
@@ -51,4 +50,4 @@ Trigger modes:
 
 Optional immediate sync on private repo update:
 
-- In `ascendho/Resume`, add a workflow on push to `Latex/resume.pdf` that calls GitHub API `repository_dispatch` to this repository with event type `sync-resume`.
+- In `ascendho/Resume`, add a workflow on push to `Latex/resume.pdf` that calls GitHub API `repository_dispatch` to this repository with event type `sync-resume`. -->
