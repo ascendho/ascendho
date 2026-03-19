@@ -29,12 +29,16 @@ jobs:
 
       - name: Copy latest resume into public site
         run: |
+          if [ ! -f private-resume/Latex/resume.pdf ]; then
+            echo "Source file private-resume/Latex/resume.pdf not found"
+            exit 1
+          fi
           mkdir -p certificates
           cp private-resume/Latex/resume.pdf certificates/resume.pdf
 
       - name: Commit and push if changed
         run: |
-          if git diff --quiet -- certificates/resume.pdf; then
+          if [ -z "$(git status --porcelain -- certificates/resume.pdf)" ]; then
             echo "No changes in resume.pdf"
             exit 0
           fi
