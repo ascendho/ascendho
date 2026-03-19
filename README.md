@@ -27,3 +27,28 @@ Here are some ideas to get you started:
 ![GitHub Streak](https://streak-stats.demolab.com?user=ascendho&theme=default)
 
 </div>
+
+---
+
+## Resume Auto Sync (Private -> Public)
+
+This repository includes a workflow at `.github/workflows/sync-resume.yml` that syncs:
+
+- Source: `ascendho/Resume` (private), file `Latex/resume.pdf`
+- Target: `certificates/resume.pdf` (this public repository)
+
+Setup required:
+
+1. Create a Personal Access Token (classic) with `repo` scope.
+2. In this public repository, add secret `RESUME_REPO_PAT` with that token.
+3. Run the workflow once manually from Actions to verify it can read the private repo.
+
+Trigger modes:
+
+- Scheduled sync every 6 hours.
+- Manual run (`workflow_dispatch`).
+- External trigger (`repository_dispatch` type: `sync-resume`).
+
+Optional immediate sync on private repo update:
+
+- In `ascendho/Resume`, add a workflow on push to `Latex/resume.pdf` that calls GitHub API `repository_dispatch` to this repository with event type `sync-resume`.
