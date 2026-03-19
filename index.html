@@ -5,103 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Asc Ho</title>
+  <link rel="stylesheet" href="assets/common.css">
   <style>
-    :root {
-      --bg: #f2f4f7;
-      --card: #ffffff;
-      --text: #1f2937;
-      --muted: #4b5563;
-      --line: #d5dae3;
-      --accent: #1d65d8;
-      --accent-soft: #eff5ff;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      margin: 0;
-      color: var(--text);
-      font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
-      background:
-        radial-gradient(circle at 10% 5%, rgba(98, 157, 255, 0.12) 0%, transparent 36%),
-        radial-gradient(circle at 90% 95%, rgba(66, 133, 244, 0.1) 0%, transparent 34%),
-        var(--bg);
-    }
-
-    .topbar {
-      border-bottom: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.93);
-      backdrop-filter: blur(6px);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .topbar-inner {
-      max-width: 1120px;
-      margin: 0 auto;
-      padding: 14px 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .site-name {
-      margin: 0;
-      color: #283246;
-      font-size: 34px;
-      font-weight: 700;
-      letter-spacing: 0.2px;
-      text-decoration: none;
-    }
-
-    .nav {
-      display: flex;
-      align-items: center;
-      gap: 18px;
-      flex-wrap: wrap;
-    }
-
-    .nav a {
-      color: #64748b;
-      text-decoration: none;
-      font-size: 18px;
-      font-weight: 600;
-      border-bottom: 2px solid transparent;
-      padding: 4px 0;
-      transition: color 0.22s ease, border-color 0.22s ease;
-    }
-
-    .nav a:hover {
-      color: var(--accent);
-    }
-
-    .nav a.active {
-      color: var(--accent);
-      border-bottom-color: var(--accent);
-    }
-
-    .wrap {
-      max-width: 1120px;
-      margin: 28px auto;
-      padding: 0 20px 36px;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      box-shadow: 0 12px 30px rgba(39, 54, 84, 0.06);
-      overflow: hidden;
-    }
-
     .about {
       padding: 44px 42px 30px;
       animation: fade-in 0.7s ease;
@@ -169,88 +74,7 @@
       flex-shrink: 0;
     }
 
-    .certificates {
-      margin-top: 22px;
-      border-top: 1px solid var(--line);
-      animation: fade-in 0.7s ease;
-    }
-
-    .section-head {
-      padding: 20px 26px;
-      border-bottom: 1px solid var(--line);
-      background: linear-gradient(90deg, #edf3ff, #f8fbff);
-    }
-
-    h2 {
-      margin: 0;
-      font-size: 31px;
-      color: #1e4f9e;
-      letter-spacing: 0.2px;
-    }
-
-    .section-desc {
-      margin: 7px 0 0;
-      color: var(--muted);
-      font-size: 15px;
-      line-height: 1.65;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      font-size: 15px;
-    }
-
-    th,
-    td {
-      border-bottom: 1px solid var(--line);
-      padding: 12px 14px;
-      text-align: left;
-      vertical-align: top;
-    }
-
-    th {
-      background: #fbfdff;
-      color: #334d77;
-      font-weight: 700;
-    }
-
-    tbody tr:hover td {
-      background: var(--accent-soft);
-    }
-
-    td a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 700;
-      word-break: break-all;
-    }
-
-    td a:hover {
-      text-decoration: underline;
-    }
-
-    @keyframes fade-in {
-      from {
-        opacity: 0;
-        transform: translateY(8px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
     @media (max-width: 900px) {
-      .site-name {
-        font-size: 28px;
-      }
-
-      .nav a {
-        font-size: 16px;
-      }
-
       .about {
         padding: 28px 22px 24px;
       }
@@ -278,21 +102,6 @@
     }
 
     @media (max-width: 640px) {
-      .topbar-inner {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-      }
-
-      .wrap {
-        margin: 16px auto;
-        padding: 0 12px 24px;
-      }
-
-      .site-name {
-        font-size: 24px;
-      }
-
       h1 {
         font-size: 38px;
       }
@@ -318,30 +127,12 @@
         width: 24px;
         height: 24px;
       }
-
-      table {
-        font-size: 13px;
-      }
-
-      th,
-      td {
-        padding: 10px;
-      }
     }
   </style>
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="topbar-inner">
-      <a class="site-name" href="#about">Asc Ho</a>
-      <nav class="nav" aria-label="Main Navigation">
-        <a class="active" href="index.html">关于我</a>
-        <a href="certificates/index.html">课程证书</a>
-        <a href="certificates/resume.pdf" target="_blank" rel="noopener noreferrer">简历</a>
-      </nav>
-    </div>
-  </header>
+  <header id="site-header" class="topbar" data-page="about" data-root-prefix=""></header>
 
   <main class="wrap">
     <section id="about" class="card about">
@@ -373,6 +164,7 @@
       </div>
     </section>
   </main>
+  <script src="assets/nav.js" defer></script>
 </body>
 
 </html>
