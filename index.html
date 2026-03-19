@@ -4,22 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Course Certificates Index</title>
+  <title>Asc Ho</title>
   <style>
     :root {
-      --bg: #f7fbff;
+      --bg: #f2f4f7;
       --card: #ffffff;
-      --line: #d7e3f3;
-      --text: #24324a;
-      --muted: #5f6f89;
-      --accent: #2f6fd8;
-      --accent-soft: #ecf3ff;
-      --warn-bg: #fff4cc;
-      --warn-text: #7a5400;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --line: #d5dae3;
+      --accent: #1d65d8;
+      --accent-soft: #eff5ff;
     }
 
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     body {
@@ -27,40 +29,37 @@
       color: var(--text);
       font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
       background:
-        radial-gradient(circle at 6% 8%, #e8f1ff 0%, transparent 30%),
-        radial-gradient(circle at 94% 88%, #eaf8ff 0%, transparent 34%),
+        radial-gradient(circle at 10% 5%, rgba(98, 157, 255, 0.12) 0%, transparent 36%),
+        radial-gradient(circle at 90% 95%, rgba(66, 133, 244, 0.1) 0%, transparent 34%),
         var(--bg);
-    }
-
-    .wrap {
-      max-width: 1024px;
-      margin: 32px auto;
-      padding: 0 18px;
     }
 
     .topbar {
       border-bottom: 1px solid var(--line);
-      background: rgba(255, 255, 255, 0.9);
+      background: rgba(255, 255, 255, 0.93);
       backdrop-filter: blur(6px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     .topbar-inner {
-      max-width: 1024px;
+      max-width: 1120px;
       margin: 0 auto;
-      padding: 14px 18px;
+      padding: 14px 20px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 14px;
+      gap: 16px;
     }
 
     .site-name {
       margin: 0;
-      font-size: 20px;
+      color: #283246;
+      font-size: 34px;
       font-weight: 700;
-      color: #2a3344;
-      text-decoration: none;
       letter-spacing: 0.2px;
+      text-decoration: none;
     }
 
     .nav {
@@ -71,56 +70,135 @@
     }
 
     .nav a {
-      color: #6a7487;
-      font-weight: 500;
-      font-size: 16px;
+      color: #64748b;
       text-decoration: none;
-      padding: 4px 2px;
+      font-size: 18px;
+      font-weight: 600;
       border-bottom: 2px solid transparent;
+      padding: 4px 0;
+      transition: color 0.22s ease, border-color 0.22s ease;
     }
 
     .nav a:hover {
-      color: #2f6fd8;
-      text-decoration: none;
+      color: var(--accent);
     }
 
     .nav a.active {
-      color: #2f6fd8;
-      border-bottom-color: #2f6fd8;
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: 28px auto;
+      padding: 0 20px 36px;
     }
 
     .card {
       background: var(--card);
       border: 1px solid var(--line);
-      border-radius: 14px;
+      border-radius: 12px;
+      box-shadow: 0 12px 30px rgba(39, 54, 84, 0.06);
       overflow: hidden;
-      box-shadow: 0 10px 26px rgba(32, 52, 83, 0.08);
     }
 
-    .head {
-      padding: 18px 24px;
-      border-bottom: 1px solid var(--line);
-      background: linear-gradient(90deg, #eaf2ff, #f8fbff);
+    .about {
+      padding: 44px 42px 30px;
+      animation: fade-in 0.7s ease;
     }
 
     h1 {
       margin: 0;
-      font-size: 30px;
-      color: var(--accent);
+      font-size: 66px;
+      line-height: 1.05;
       letter-spacing: 0.3px;
+      color: #202a3c;
+    }
+
+    .role {
+      margin: 18px 0 14px;
+      font-size: 35px;
+      color: #1f375f;
+      font-weight: 500;
     }
 
     .desc {
-      margin: 8px 0 0;
+      margin: 0;
+      color: #1f2937;
+      font-size: 40px;
+      line-height: 1.72;
+    }
+
+    .desc+.desc {
+      margin-top: 18px;
+    }
+
+    .contact {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+      flex-wrap: wrap;
+    }
+
+    .contact-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 22px;
+      line-height: 1.2;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .contact-link:hover {
+      text-decoration: underline;
+    }
+
+    .contact-icon {
+      width: 30px;
+      height: 30px;
+      fill: currentColor;
+      flex-shrink: 0;
+    }
+
+    .certificates {
+      margin-top: 22px;
+      border-top: 1px solid var(--line);
+      animation: fade-in 0.7s ease;
+    }
+
+    .section-head {
+      padding: 20px 26px;
+      border-bottom: 1px solid var(--line);
+      background: linear-gradient(90deg, #edf3ff, #f8fbff);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 31px;
+      color: #1e4f9e;
+      letter-spacing: 0.2px;
+    }
+
+    .section-desc {
+      margin: 7px 0 0;
       color: var(--muted);
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.65;
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
-      font-size: 14px;
+      font-size: 15px;
     }
 
     th,
@@ -133,65 +211,112 @@
 
     th {
       background: #fbfdff;
-      color: #39517c;
+      color: #334d77;
       font-weight: 700;
     }
 
-    tr:hover td {
+    tbody tr:hover td {
       background: var(--accent-soft);
     }
 
-    a {
+    td a {
       color: var(--accent);
-      font-weight: 700;
       text-decoration: none;
+      font-weight: 700;
       word-break: break-all;
     }
 
-    a:hover {
+    td a:hover {
       text-decoration: underline;
     }
 
-    .to-fill {
-      display: inline-block;
-      padding: 3px 8px;
-      border-radius: 999px;
-      background: var(--warn-bg);
-      color: var(--warn-text);
-      font-weight: 700;
-      border: 1px solid #f2d271;
-      font-size: 12px;
-      letter-spacing: 0.2px;
-    }
-
-    .foot {
-      padding: 14px 24px 20px;
-      color: var(--muted);
-      font-size: 13px;
-      line-height: 1.65;
-    }
-
-    @media (max-width: 760px) {
-      .wrap {
-        margin: 18px auto;
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
       }
 
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 900px) {
+      .site-name {
+        font-size: 28px;
+      }
+
+      .nav a {
+        font-size: 16px;
+      }
+
+      .about {
+        padding: 28px 22px 24px;
+      }
+
+      h1 {
+        font-size: 46px;
+      }
+
+      .role {
+        font-size: 24px;
+      }
+
+      .desc {
+        font-size: 20px;
+      }
+
+      .contact-link {
+        font-size: 19px;
+      }
+
+      .contact-icon {
+        width: 26px;
+        height: 26px;
+      }
+    }
+
+    @media (max-width: 640px) {
       .topbar-inner {
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
       }
 
-      .nav {
-        gap: 12px;
+      .wrap {
+        margin: 16px auto;
+        padding: 0 12px 24px;
       }
 
-      .nav a {
-        font-size: 15px;
+      .site-name {
+        font-size: 24px;
       }
 
       h1 {
-        font-size: 24px;
+        font-size: 38px;
+      }
+
+      .role {
+        margin-top: 12px;
+        font-size: 21px;
+      }
+
+      .desc {
+        font-size: 18px;
+      }
+
+      .contact-links {
+        gap: 16px;
+      }
+
+      .contact-link {
+        font-size: 18px;
+      }
+
+      .contact-icon {
+        width: 24px;
+        height: 24px;
       }
 
       table {
@@ -209,101 +334,45 @@
 <body>
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="site-name" href="https://github.com/ascendho" target="_blank" rel="noopener noreferrer">Asc Ho</a>
+      <a class="site-name" href="#about">Asc Ho</a>
       <nav class="nav" aria-label="Main Navigation">
-        <a href="https://github.com/ascendho" target="_blank" rel="noopener noreferrer">About Me</a>
-        <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer">Publications</a>
-        <a class="active" href="index.html">Certificates</a>
-        <a href="certificates/resume.pdf" target="_blank" rel="noopener noreferrer"
-          title="Place your resume at certificates/resume.pdf in this repository.">CV</a>
+        <a class="active" href="index.html">关于我</a>
+        <a href="certificates/index.html">课程证书</a>
+        <a href="certificates/resume.pdf" target="_blank" rel="noopener noreferrer">简历</a>
       </nav>
     </div>
   </header>
-  <div class="wrap">
-    <section class="card">
-      <header class="head">
-        <h1>课程证书索引</h1>
-        <p class="desc">本页适配 GitHub Pages/Netlify。可点击“本地 PDF”下对应的链接直接查看证书文件，点击“在线核验”下对应的链接跳转到官方平台核验页面。</p>
-      </header>
 
-      <table>
-        <thead>
-          <tr>
-            <th>课程平台</th>
-            <th>课程名称</th>
-            <th>本地 PDF</th>
-            <th>在线核验</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Coursera</td>
-            <td>AI Python for Beginners</td>
-            <td><a href="certificates/ai-python-for-beginners.pdf" target="_blank" rel="noopener noreferrer">Open
-                PDF</a></td>
-            <td><a href="https://coursera.org/verify/Z5Y6FYAN8USM" target="_blank"
-                rel="noopener noreferrer">Z5Y6FYAN8USM</a></td>
-          </tr>
-          <tr>
-            <td>Coursera</td>
-            <td>nand2tetris I</td>
-            <td><a href="certificates/nand2tetris-i.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
-            <td><a href="https://coursera.org/verify/1K1GABQV8WKB" target="_blank"
-                rel="noopener noreferrer">1K1GABQV8WKB</a></td>
-          </tr>
-          <tr>
-            <td>Coursera</td>
-            <td>nand2tetris II</td>
-            <td><a href="certificates/nand2tetris-ii.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
-            <td><a href="https://coursera.org/verify/WUAL2O52509M" target="_blank"
-                rel="noopener noreferrer">WUAL2O52509M</a></td>
-          </tr>
-          <tr>
-            <td>Coursera</td>
-            <td>Reinforcement Learning</td>
-            <td><a href="certificates/reinforcement-learning.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a>
-            </td>
-            <td><a href="https://coursera.org/verify/2C87GU27VV3F" target="_blank"
-                rel="noopener noreferrer">2C87GU27VV3F</a></td>
-          </tr>
-          <tr>
-            <td>Coursera</td>
-            <td>Virtualization</td>
-            <td><a href="certificates/virtualization.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
-            <td><a href="https://coursera.org/verify/5HWVHCGXB9EQ" target="_blank"
-                rel="noopener noreferrer">5HWVHCGXB9EQ</a></td>
-          </tr>
-          <tr>
-            <td>Harvard</td>
-            <td>CS50 SQL</td>
-            <td><a href="certificates/cs50-sql.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
-            <td><a href="https://cs50.harvard.edu/certificates/ea035c2f-87b0-4993-b6a8-d7d2ffa021cf" target="_blank"
-                rel="noopener noreferrer">ea035c2f-87b0-4993-b6a8-d7d2ffa021cf</a></td>
-          </tr>
-          <tr>
-            <td>Harvard</td>
-            <td>CS50x</td>
-            <td><a href="certificates/cs50x.pdf" target="_blank" rel="noopener noreferrer">Open PDF</a></td>
-            <td><a href="https://cs50.harvard.edu/certificates/db573909-1ee6-41be-87f8-9c0b8a9d4c8a" target="_blank"
-                rel="noopener noreferrer">db573909-1ee6-41be-87f8-9c0b8a9d4c8a</a></td>
-          </tr>
-          <tr>
-            <td>Udemy</td>
-            <td>The Grey Wolf Optimizer</td>
-            <td><a href="certificates/the-grey-wolf-optimizer.pdf" target="_blank" rel="noopener noreferrer">Open
-                PDF</a></td>
-            <td><a href="https://ude.my/UC-c0d986ca-97d3-45ec-b8ac-60a915774900" target="_blank"
-                rel="noopener noreferrer">UC-c0d986ca-97d3-45ec-b8ac-60a915774900</a></td>
-          </tr>
-        </tbody>
-      </table>
+  <main class="wrap">
+    <section id="about" class="card about">
+      <h1>Ascend Ho</h1>
+      <p class="role">你好，欢迎来到我的个人网站。</p>
+      <p class="desc">我正在持续探索计算机科学中的不同方向，最近主要关注系统工程、机器学习以及开发效率相关的话题。</p>
+      <p class="desc">这个网站会记录我的学习路径、课程证书和阶段性项目，也会逐步整理一些我认为有价值的经验总结。</p>
+      <p class="desc">后续我会把这里的内容不断完善，让它成为一个长期更新的个人技术档案。</p>
 
-      <div class="foot">
-        邮箱: ascendho@outlook.com<br>
-        GitHub: <a href="https://github.com/ascendho" target="_blank" rel="noopener noreferrer">Asc Ho</a>
+      <div class="contact">
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:ascendho@outlook.com" aria-label="发送邮件给 ascendho@outlook.com">
+            <svg class="contact-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path
+                d="M8 0a8 8 0 1 0 4.906 14.32l-.722-1.093A6.5 6.5 0 1 1 14.5 8c0 2.162-1.187 3.5-2.5 3.5-1.017 0-1.727-.746-1.727-1.9V5.5H8.8v.749h-.03c-.325-.57-.914-.93-1.691-.93-1.425 0-2.567 1.232-2.567 2.9 0 1.671 1.13 2.904 2.57 2.904.8 0 1.406-.365 1.73-.982h.028v.18c0 1.237.74 2.179 2.06 2.179 2.053 0 3.6-1.899 3.6-4.5A7.5 7.5 0 0 0 8 0Zm-.75 9.805c-.84 0-1.438-.73-1.438-1.589 0-.859.599-1.584 1.438-1.584.848 0 1.451.725 1.451 1.584 0 .86-.603 1.589-1.45 1.589Z" />
+            </svg>
+            <span>ascendho@outlook.com</span>
+          </a>
+
+          <a class="contact-link" href="https://github.com/ascendho" target="_blank" rel="noopener noreferrer"
+            aria-label="访问 Asc Ho 的 GitHub">
+            <svg class="contact-icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.5-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.53 7.53 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+        </div>
       </div>
     </section>
-  </div>
+  </main>
 </body>
 
 </html>
