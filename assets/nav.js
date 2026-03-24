@@ -25,7 +25,12 @@
 
   header.innerHTML =
     "<div class=\"topbar-inner\">" +
-    "<a class=\"site-name\" href=\"" + prefix + "index.html\">Asc Ho</a>" +
+    "<a class=\"site-name\" href=\"" + prefix + "index.html\" aria-label=\"返回首页\">" +
+    "<svg class=\"site-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\">" +
+    "<path d=\"M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-4.42 0-8 2.24-8 5v1h16v-1c0-2.76-3.58-5-8-5Z\"/>" +
+    "</svg>" +
+    "<span>Asc Ho</span>" +
+    "</a>" +
     "<nav class=\"nav\" aria-label=\"Main Navigation\">" +
     navLinks +
     "</nav>" +

@@ -48,6 +48,16 @@ body {
   font-weight: 700;
   letter-spacing: 0.2px;
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-icon {
+  width: 32px;
+  height: 32px;
+  fill: currentColor;
+  flex-shrink: 0;
 }
 
 .nav {
@@ -107,6 +117,11 @@ body {
     font-size: 28px;
   }
 
+  .site-icon {
+    width: 28px;
+    height: 28px;
+  }
+
   .nav a {
     font-size: 16px;
   }
@@ -126,5 +141,10 @@ body {
 
   .site-name {
     font-size: 24px;
+  }
+
+  .site-icon {
+    width: 24px;
+    height: 24px;
   }
 }
