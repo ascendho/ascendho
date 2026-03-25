@@ -10,7 +10,7 @@
   var links = [
     { id: "about", href: prefix + "index.html", label: "关于我" },
     { id: "certificates", href: prefix + "certificates/index.html", label: "课程证书" },
-    { id: "resume", href: prefix + "certificates/resume.pdf", label: "简历", external: true }
+    { id: "resume", href: prefix + "resume/resume.pdf", label: "简历", external: true }
   ];
 
   var navLinks = links

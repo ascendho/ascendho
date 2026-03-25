@@ -34,7 +34,7 @@ Here are some ideas to get you started:
 This repository includes a workflow at `.github/workflows/sync-resume.yml` that syncs:
 
 - Source: `ascendho/Resume` (private), file `Latex/resume.pdf`
-- Target: `certificates/resume.pdf` (this public repository)
+- Target: `resume/resume.pdf` (this public repository)
 
 Setup required:
 

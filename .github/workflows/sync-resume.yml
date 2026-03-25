@@ -33,18 +33,18 @@ jobs:
             echo "Source file private-resume/Latex/resume.pdf not found"
             exit 1
           fi
-          mkdir -p certificates
-          cp private-resume/Latex/resume.pdf certificates/resume.pdf
+          mkdir -p resume
+          cp private-resume/Latex/resume.pdf resume/resume.pdf
 
       - name: Commit and push if changed
         run: |
-          if [ -z "$(git status --porcelain -- certificates/resume.pdf)" ]; then
+          if [ -z "$(git status --porcelain -- resume/resume.pdf)" ]; then
             echo "No changes in resume.pdf"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add certificates/resume.pdf
+          git add resume/resume.pdf
           git commit -m "chore: sync latest resume.pdf from private repo"
           git push
