@@ -18,7 +18,6 @@ const nextConfig: NextConfig = {
   devIndicators: false,
   output: isGithubPagesBuild ? "export" : undefined,
   basePath,
-  assetPrefix: basePath ? `${basePath}/` : undefined,
   trailingSlash: isGithubPagesBuild,
 };
 

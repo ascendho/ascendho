@@ -29,12 +29,15 @@ npm start
 
 - 直接导入当前仓库即可。
 - 构建命令使用 `npm run build`。
+- Publish directory 保持留空自动检测；如果必须手动填写，使用 `.next`，不要填写 `out`。
+- 不要在 Netlify 项目里配置 `NEXT_PUBLIC_BASE_PATH` 或 `GITHUB_PAGES`。
 - 当前项目是标准 Next.js 应用，Netlify 会自动识别并处理运行时。
 
 ### GitHub Pages
 
 - 仓库内已经提供 [.github/workflows/deploy-pages.yml](.github/workflows/deploy-pages.yml) 工作流。
 - 在 GitHub 仓库设置中把 Pages 的 Source 设为 `GitHub Actions`。
+- 当前项目站点地址应为 `https://ascendho.github.io/ascendho/`。
 - 工作流会切换到静态导出模式，并根据仓库名生成正确的 `basePath`。
 - 如果要本地模拟 GitHub Pages 构建，可以运行：
 
@@ -43,6 +46,8 @@ NEXT_PUBLIC_BASE_PATH=/ascendho GITHUB_PAGES=true npm run build
 ```
 
 如果仓库未来改成 `用户名.github.io` 这种用户主页仓库，本地模拟时把 `NEXT_PUBLIC_BASE_PATH` 留空即可。
+
+`out/` 目录只用于 GitHub Pages 静态导出，不应用作 Netlify 的发布目录。
 
 ## 资源目录
 
