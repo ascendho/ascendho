@@ -1,0 +1,2 @@
+:HL["/ascendho/_next/static/chunks/0n2lo6xwbc6n2.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"bE0_oCB_vSgeuClys1JKG"}
