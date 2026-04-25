@@ -30,6 +30,7 @@ npm start
 - 直接导入当前仓库即可。
 - 构建命令使用 `npm run build`。
 - Publish directory 保持留空自动检测；如果必须手动填写，使用 `.next`，不要填写 `out`。
+- **重要：** 项目根目录已有 `netlify.toml`，但 Netlify Dashboard 的 `Publish directory` 字段会覆盖它。如果在 Dashboard → Site settings → Build & deploy 里看到 `Publish directory` 不为空（例如填了 `.`），必须将其**清空**，否则会出现 404。
 - 不要在 Netlify 项目里配置 `NEXT_PUBLIC_BASE_PATH` 或 `GITHUB_PAGES`。
 - 当前项目是标准 Next.js 应用，Netlify 会自动识别并处理运行时。
 
